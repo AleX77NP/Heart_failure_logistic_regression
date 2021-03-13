@@ -3,7 +3,7 @@
     "path": "~/Desktop/Heart_failure_analysis/main.R",
     "project_path": "main.R",
     "type": "r_source",
-    "hash": "861109420",
+    "hash": "0",
     "contents": "",
     "dirty": true,
     "created": 1615579281279.0,
@@ -13,7 +13,7 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "18,0",
+        "cursorPosition": "14,49",
         "scrollLine": "0"
     },
     "folds": "",
@@ -21,7 +21,7 @@
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1615663300050,
+    "last_content_update": 1615663489336,
     "read_only": false,
     "read_only_alternatives": []
 }

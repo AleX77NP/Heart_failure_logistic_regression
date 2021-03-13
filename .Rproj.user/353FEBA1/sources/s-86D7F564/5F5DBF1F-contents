@@ -12,6 +12,8 @@ for(i in 1:13) {
   hist(dataHf[,i], main=names(dataHf)[i])
 }
 
+#binomal tells R that we want logistic regression
+
 hf.data <- glm(formula = DEATH_EVENT ~ age + anaemia + creatinine_phosphokinase + diabetes + ejection_fraction + high_blood_pressure
                + platelets + serum_creatinine + serum_sodium + sex + smoking + time, data = dataHf, family = binomial)
 
