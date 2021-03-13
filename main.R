@@ -1,0 +1,19 @@
+#print(getwd())
+
+dataHf <- read.csv('heart_failure_clinical_records_dataset.csv')
+
+#print(data)
+print(names(dataHf))
+print(summary(dataHf))
+
+#generate histogram for all values , not Y (DEATHS)
+par(mfrow=c(1,13))
+for(i in 1:13) {
+  hist(dataHf[,i], main=names(dataHf)[i])
+}
+
+hf.data <- glm(formula = DEATH_EVENT ~ age + anaemia + creatinine_phosphokinase + diabetes + ejection_fraction + high_blood_pressure
+               + platelets + serum_creatinine + serum_sodium + sex + smoking + time, data = dataHf, family = binomial)
+
+print(summary(hf.data))
+
